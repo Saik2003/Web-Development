@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+    <head>
+        <title>Flexbox in css</title>
+    </head>
+
+    <style type="text/css">
+        .container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: stretch;
+            align-items:baseline;
+            height: 600px;
+            background-color: black;
+            align-content: space-around;
+
+        }
+        #box1{
+            order: 5;
+            flex-shrink: 1;
+            align-self: center;
+        }
+        #box2{
+            order: 3;
+            flex-shrink: 1;
+        }
+        #box4{
+            order: 1;
+            flex-grow: 1;
+        }
+        #box3{
+            flex-grow: 1;
+        }
+        .box{
+            background-color: yellow;
+            width: 200px;
+            font-size: 25px;
+            padding: 20px;
+            margin: 10px;
+        }
+
+
+    </style>
+
+    <body>
+        <div class="container">
+            <div class="box" id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
+            <div class="box" id="box4">4</div>
+            
+            
+        </div>
+    </body>
+</html>

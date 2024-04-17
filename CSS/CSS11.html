@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>psuedo selectors and combinators</title>
+    </head>
+
+    <style type="text/css">
+        
+        div > span{
+            background-color: red;
+        }
+
+        div ~ span{
+            background-color: green;
+        }
+        div + span{
+            background-color: violet;
+        }
+        a[target=self]{
+            background-color: yellowgreen;
+        }
+        input[type=text]{
+            width: 100%;
+        }
+        li:first-child{
+            background-color: blue;
+        }
+        li:last-child{
+            background-color: honeydew;
+        }
+        li:nth-child(6){
+            background-color: aqua;
+        }
+        li:nth-child(3n){
+            background-color: chartreuse;
+        }
+        li::selection{
+            background-color: darkmagenta;
+            color: yellow;
+        }
+
+
+
+    </style>
+
+    <body>
+
+        <div>
+            <p>
+                <span>Hello World</span>
+            </p>
+            <span>
+                Hello World
+            </span>
+        </div>
+
+        <span>Hello World</span>
+
+        <span>Hello World</span>
+
+        <br><br>
+
+        <a href="#" target="blank">First Link</a>
+        <a href="#" target="self">Second Link</a>
+        <a href="#">Third Link</a>
+
+        <input type="text" name="">
+        <input type="email" name="">
+
+        
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+            <li>Item 10</li>
+            <li>Item 11</li>
+            <li>Item 12</li>
+            <li>Item 13</li>
+            <li>Item 14</li>
+            <li>Item 15</li>
+            <li>Item 16</li>
+        </ul>
+
+    </body>
+</html>

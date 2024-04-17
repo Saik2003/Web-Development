@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Table Styling in CSS
+        </title>
+    </head>
+
+    <style>
+        h1{
+            font-style: oblique;
+            font-size: 50px;
+            text-align: center;
+        }
+        #Container{
+            max-width: 1000px ;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+        }
+        table,th,tr,td{
+            border: 5px black solid;
+            border-collapse: collapse;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        th{
+            background-color: red;
+            color: cornsilk;
+            font-size: 10px;
+        }
+        tr{
+            height: 40px;
+        }
+        td{
+            padding: 10px;
+        }
+        tr:hover{
+            background-color: #eee;
+        }
+        tr:nth-child(even){
+            background-color: yellow;
+        }
+
+
+    </style> 
+
+    <body>
+        <h1><b> Table Example in CSS</b></h1>
+        <div id="Container">
+            <table>
+                <tr>
+                    <th> Name </th>
+                    <th> Age </th>
+                    <th> Branch </th>
+                    <th> College </th>
+                </tr>
+
+                <tr>
+                    <td> Saikumar </td>
+                    <td> 21 </td>
+                    <td> CSE </td>
+                    <td> SRMAP </td>
+                </tr>
+
+                <tr>
+                    <td> Rishabh </td>
+                    <td> 21 </td>
+                    <td> ECE </td>
+                    <td> VITAP </td>
+                </tr>
+
+                <tr>
+                    <td> Krishna Sharma </td>
+                    <td> 21 </td>
+                    <td> EEE </td>
+                    <td> KLU </td>
+                </tr>
+
+
+            </table>
+        </div>
+
+
+
+
+
+
+
+
+    </body>
+</html>

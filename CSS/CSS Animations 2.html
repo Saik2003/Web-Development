@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            CSS Animations 2
+        </title>
+    </head>
+
+    <style type="text/css">
+        body{
+            background-color: black;
+        }
+        .box{
+            background-color: white;
+            height: 100px;
+            width:100px;
+            animation-name: Anime;
+            animation-duration: 3s;
+            position: relative;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        @keyframes Anime{
+            0%{
+                background-color: white;
+                top:0px;
+                left:0px;
+            }
+
+            25%{
+                background-color: red;
+                top:0px;
+                left:45%;
+                border-radius: 50%;
+            }
+            50%{
+                background-color: yellow;
+                top:200px;
+                left:45%;
+                border-radius: 50%;
+            }
+            100%{
+                background-color: green;
+                top:200px;
+                left:92%;
+
+            }
+        }
+
+
+    </style>
+
+    <body>
+        <div class="box"></div>
+
+
+    </body>
+</html>
